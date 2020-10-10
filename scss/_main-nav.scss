@@ -1,0 +1,45 @@
+.main-nav{
+    background-color:white;
+    box-shadow: 0px 3px 6px #00000029;
+    width:100%;
+    position:fixed;
+    top: 0;
+    z-index:2;
+}
+
+.main-nav .flex-box{
+    justify-content: space-between;
+}
+
+
+.main-nav h1{
+    align-self:center;
+    display:block;
+    font-family: 'Raleway', sans-serif;
+    font-size:32px;
+    font-weight:300;
+    color:#08A6E4;
+    padding-left:15px;
+}
+
+.main-nav ul{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3.28px;
+    display:flex;
+    text-transform:uppercase;
+    font-size:11px;
+    font-weight:700;
+    color:#A5A5A5;
+}
+
+.main-nav ul li{
+    padding:30px 40px;
+    border-bottom: solid 1px transparent;
+    
+    &:hover{
+        cursor: pointer;
+        color:black;
+        border-color:blue;
+    }
+}
+

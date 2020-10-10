@@ -1,0 +1,150 @@
+.benefits{
+    padding-top:105px;
+    padding-bottom:105px;
+    background-color:#F7F7F7;
+    color:black;
+}
+
+.benefits .container{
+    max-width:1024px;
+}
+
+.benefits .box{
+    position:relative;
+    border-radius: 5px;
+    background-color:white;
+    margin:40px 0;
+    display:flex;
+    justify-content: space-between;
+}
+
+.benefits .box3{
+    background-color:#F7F7F7;
+}
+
+.benefits .text{
+    padding:90px 35px 90px 20px;
+    width:40%;
+}
+
+
+.benefits .text h2{
+    width:75%;
+    font-family: 'Raleway', sans-serif;
+    font-size:36px;
+    font-weight:400;
+}
+
+.benefits .text p{
+    margin-top:30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+    font-weight:400;
+    padding-bottom:50px;
+}
+
+.benefits .box3 .text{
+    background-color:white;
+    padding:90px 35px 90px 20px;
+    width:55%;
+}
+
+.benefits .box3 .text h2{
+    width:70%;
+}
+
+.benefits .box1 p{
+    border-bottom: solid 5px #FB3B64;
+}
+
+.benefits .box2 p{
+    border-bottom: solid 5px #07ACE6;
+}
+
+.benefits .box3 p{
+    border-bottom: solid 5px #55DFB4;
+}
+
+
+.benefits .box1 .image{
+    position:relative;
+    margin-top:70px;
+    z-index:1;
+    width:380px;
+    height:220px;
+    right:120px;
+    top:30px;
+
+    &::before{
+        position:absolute;
+        content:"";
+        display:block;
+        transform: rotate(45deg);
+        border-radius:40px;
+        background-color:#FB3B64;
+        height:180px;
+        width:180px;
+        top:-50px;
+        right:-10px;
+        z-index:-1;
+    }
+
+    img{
+        width:100%;
+        height:100%;
+    }
+    
+}
+
+
+
+
+.benefits .box2 .image{
+    position:relative;
+    margin-top:70px;
+    z-index:1;
+    width:420px;
+    height:330px;
+    left:70px;
+    bottom:20px;
+    &::before{
+        position:absolute;
+        content:"";
+        display:block;
+        border-radius:50%;
+        background-color: #07ACE6;
+        height:320px;
+        width:320px;
+        top:0;
+        left:0;
+        z-index:-1;
+    }
+    img{
+        height:100%;
+        width:100%;
+        align-self:center;
+    }
+}
+
+
+
+
+.benefits .box3 .image{
+    background-color: #55DFB4;
+    height:inherit;
+    min-height:367px;
+    width:440px;
+    &::before{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(50%,-50%);
+        content:"";
+        display:block;
+        background-image:url(../assets/Trumpet.png);
+        background-size:contain;
+        height:210px;
+        width:300px;
+        z-index:1;
+    } 
+}
