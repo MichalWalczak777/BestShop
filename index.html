@@ -19,12 +19,18 @@
                 <div class="container">
                     <div class="flex-box">
                             <h1>BestShop</h2>
-                            <ul>
+                            <ul class="nav-list">
                                 <li><a href="#stats">why us</a></li>
                                 <li><a href="#benefits">benefits</a></li>
                                 <li><a href="#prices">prices</a></li>
                                 <li><a href="#contact">contact</a></li>
                             </ul>
+                            <button class="burger">
+                                <strong>Menu</strong>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
                     </div>
                 </div>
             </nav>
@@ -100,7 +106,9 @@
                             <h2>Increase recognition of your brand</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ipsum elit, commodo interdum sagittis sit amet, fringilla in elit. Proin malesuada tellus ex, ac.</p>
                         </div>
-                        <div class="image"></div>
+                        <div class="image">
+                            <img src="assets/Trumpet.png">
+                        </div>
                     </div>
                 </div>        
             </section>
@@ -113,9 +121,11 @@
                 <div class="container">
                     <div class="flex-box">
                         <div class="box1 box">
-                            <h3>Basic</h3>
-                            <h4>$0</h4>
-                            <p></p>
+                            <div class="headers">
+                                <h3>Basic</h3>
+                                <h4>$0</h4>
+                                <p></p>
+                            </div>
                             <ul>
                                 <li><img src="assets/Ckechmark-1.svg">100 MB HDD</li>
                                 <li><img src="assets/Ckechmark-1.svg">1 Subdomain</li>
@@ -126,9 +136,11 @@
                             <a href="#">Begin</a>
                         </div>
                         <div class="box2 box">
-                            <h3>Professional</h3>
-                            <h4>$25</h4>
-                            <p>Limited offer</p>
+                            <div class="headers">
+                                <h3>Professional</h3>
+                                <h4>$25</h4>
+                                <p>Limited offer</p>
+                            </div>
                             <ul>
                                 <li><img src="assets/Ckechmark-1.svg">500 MB HDD</li>
                                 <li><img src="assets/Ckechmark-1.svg">2 Subdomains</li>
@@ -139,8 +151,11 @@
                             <a href="#">Begin</a>
                         </div>
                         <div class="box3 box">
-                            <h3>Premium</h3>
-                            <h4>$60</h4>                        <p>Limited offer</p>
+                            <div class="headers">
+                                <h3>Premium</h3>
+                                <h4>$60</h4>
+                                <p>Limited offer</p>
+                            </div>
                             <ul>
                                 <li><img src="assets/Ckechmark-1.svg">2 GB HDD</li>
                                 <li><img src="assets/Ckechmark-1.svg">5 Subdomains</li>
@@ -167,8 +182,8 @@
                         <h2>Any questions?</h2>
                         <p>Leave your email address or call us!</p>
                         <div class="contact">
-                            <img src="assets/Mail Icon.svg"><p>info@bestshop.xyz</p>
-                            <img src="assets/Phone Icon.svg"><p>123 456 789</p>
+                            <div class="contact-line"><img src="assets/Mail Icon.svg"><p>info@bestshop.xyz</p></div>
+                            <div class="contact-line"><img src="assets/Phone Icon.svg"><p>123 456 789</p></div>
                         </div>
                     </div>
                     <form>
@@ -203,7 +218,7 @@
                 </div>
             </div>
         </footer>
-
+        <script src="script.js"></script>
     </body>
 </html>
 

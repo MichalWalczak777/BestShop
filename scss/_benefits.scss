@@ -29,7 +29,6 @@
 
 
 .benefits .text h2{
-    width:75%;
     font-family: 'Raleway', sans-serif;
     font-size:36px;
     font-weight:400;
@@ -46,12 +45,8 @@
 .benefits .box3 .text{
     background-color:white;
     padding:90px 35px 90px 20px;
-    width:55%;
 }
 
-.benefits .box3 .text h2{
-    width:70%;
-}
 
 .benefits .box1 p{
     border-bottom: solid 5px #FB3B64;
@@ -68,12 +63,11 @@
 
 .benefits .box1 .image{
     position:relative;
-    margin-top:70px;
+    margin-top:110px;
+    margin-right:120px;
     z-index:1;
     width:380px;
     height:220px;
-    right:120px;
-    top:30px;
 
     &::before{
         position:absolute;
@@ -105,8 +99,8 @@
     z-index:1;
     width:420px;
     height:330px;
-    left:70px;
-    bottom:20px;
+    margin-left:70px;
+    margin-top:20px;
     &::before{
         position:absolute;
         content:"";
@@ -130,21 +124,14 @@
 
 
 .benefits .box3 .image{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     background-color: #55DFB4;
-    height:inherit;
-    min-height:367px;
     width:440px;
-    &::before{
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform: translate(50%,-50%);
-        content:"";
-        display:block;
-        background-image:url(../assets/Trumpet.png);
-        background-size:contain;
-        height:210px;
-        width:300px;
-        z-index:1;
-    } 
+        img{
+            height:210px;
+            width:300px;
+        }
 }
