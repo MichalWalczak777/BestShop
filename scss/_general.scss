@@ -18,6 +18,11 @@ a{
     padding-right:15px;
 }
 
+input[type=checkbox] {
+    height: 24px;
+    width: 24px;
+}
+
 @media (max-width:1352){
     .container{
         width:100%;      

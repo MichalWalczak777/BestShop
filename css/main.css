@@ -380,6 +380,11 @@ a {
   padding-right: 15px;
 }
 
+input[type=checkbox] {
+  height: 24px;
+  width: 24px;
+}
+
 @media (max-width: 1352) {
   .container {
     width: 100%;
@@ -813,6 +818,156 @@ a {
   background-color: #55DFB4;
 }
 
+.calc {
+  padding: 80px 0;
+  background-color: #F7F7F7;
+}
+@media (max-width: 1024px) {
+  .calc {
+    padding: 30px 15px;
+  }
+}
+.calc h2 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+}
+.calc__columns {
+  max-width: 865px;
+  margin: 50px auto 0;
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .calc__columns {
+    display: block;
+  }
+}
+.calc__form {
+  width: 50%;
+  margin-right: 20px;
+}
+@media (max-width: 1024px) {
+  .calc__form {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.calc__input input, .calc__select .select__input {
+  color: grey;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #08A6E4;
+  padding: 11px 20px;
+  line-height: 1em;
+  font-size: 0.8125rem;
+  box-shadow: 0px 3px 6px #08A6E429;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.calc__input input::-moz-placeholder {
+  color: grey;
+}
+.calc__input input:-ms-input-placeholder {
+  color: grey;
+}
+.calc__input input::placeholder {
+  color: grey;
+}
+.calc__select {
+  position: relative;
+}
+.calc__select .select__input {
+  position: relative;
+  height: 40px;
+  vertical-align: middle;
+  padding: 13px 20px;
+  cursor: pointer;
+}
+.calc__select .select__input::after {
+  content: "";
+  background-image: url("../assets/Arrow.svg");
+  width: 22px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 9px;
+}
+.calc__select .select__dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #FB3B64;
+  overflow: hidden;
+}
+.calc__select .select__dropdown li {
+  font-size: 13px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.calc__select .select__dropdown li:hover {
+  background-color: #F7F7F7;
+}
+.calc__select.open .select__input::after {
+  transform: rotate(180deg);
+}
+.calc__select.open .select__dropdown {
+  display: block;
+}
+.calc .form__checkbox .consent__text {
+  padding-top: 4px;
+}
+.calc__summary {
+  width: 50%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .calc__summary {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+.calc__summary .summary__total,
+.calc__summary .list__item {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 6px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 0.875rem;
+  display: none;
+}
+.calc__summary .summary__total.open,
+.calc__summary .list__item.open {
+  display: flex;
+}
+.calc__summary .summary__total {
+  width: 50%;
+  align-self: flex-end;
+  margin-top: 22px;
+  padding: 8px 20px;
+  background-color: #08A6E4;
+}
+.calc__summary .summary__total .total__price {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.calc__summary .list__item {
+  padding: 6px 20px;
+  background-color: #55DFB4;
+  margin-bottom: 8px;
+}
+.calc__summary .list__item .item__price {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
 .footer > .container {
   padding-top: 180px;
   padding-bottom: 180px;
@@ -992,23 +1147,34 @@ a {
     text-align: center;
   }
 
-  .stats h2 {
-    margin-bottom: 30px;
-    font-size: 30px;
+  .footer .text-box {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .stats .image-box .stats-text {
-    padding-bottom: 0;
-    margin-bottom: 30px;
-    width: 40%;
+  .footer .text-box h2 {
+    font-size: 40px;
   }
-  .stats .image-box:last-child .stats-text {
-    margin-bottom: 0;
-    padding-bottom: 50px;
+  .footer .text-box p {
+    font-size: 16px;
   }
-  .stats .flex-box {
+  .footer .contact {
     flex-direction: column;
   }
+  .footer form {
+    margin-top: 50px;
+    padding-left: 20px;
+  }
 
+  .footer > .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer > .container > .flex-box {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
   .benefits {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1074,6 +1240,24 @@ a {
     transform: translate(0, 0);
     position: static;
   }
+}
+@media (max-width: 700px) {
+  .stats h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .stats .image-box .stats-text {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+    width: 40%;
+  }
+  .stats .image-box:last-child .stats-text {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }
+  .stats .flex-box {
+    flex-direction: column;
+  }
 
   .pricing h2 {
     margin-top: 50px;
@@ -1105,33 +1289,6 @@ a {
     margin: 0;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-
-  .footer .text-box {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .footer .text-box h2 {
-    font-size: 40px;
-  }
-  .footer .text-box p {
-    font-size: 16px;
-  }
-  .footer .contact {
-    flex-direction: column;
-  }
-  .footer form {
-    margin-top: 50px;
-    padding-left: 20px;
-  }
-
-  .footer > .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .footer > .container > .flex-box {
-    flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */
